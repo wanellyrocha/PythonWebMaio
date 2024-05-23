@@ -3,50 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aula 15/05/2024</title>
+    <title>Aula 22-05-2024</title>
 </head>
 <body>
-<h1>Samsung Ocean</h1>
-<a href="https://oceanbrasil.com/"> Samsung Ocean </a>
 
-<img src="static/eye2.jpg" height="200" width="200" alt="Olho de um animal com cara de feroz">
-
-    <h1>Título 1</h1>
-    <h2>Título 2</h2>
-    <h3>Título 3</h3>
-    <h4>Título 4</h4>
-    <h5>Título 5</h5>
-    <h6>Título 6</h6>
-
-<h1>Lista de Times</h1>
-<ul>
-    <li>Flamengo</li>
-    <li>Fluminense</li>
-    <li>Vasco</li>
-    <li>Palmeiras</li>
-    <li>Corinthias</li>
-</ul>
-
-<h1>Lista de Frutas</h1>
-<ol>
-    <li>Marolo</li>
-    <p>Fruta que parece uma pinha, só que maior</p>
-    <li>Pinha</li>
-    <li>Tomate</li>
-    <li>Laranja</li>
-    <li>Cupuaçu</li>
-    <li>Biribá</li>
-    <li>Tucumã</li>
-</ul>
-
-<dl>
-<dt> HTML </dt>
-<dd>Linguagem de Marcação de Hipertexto</dd>
-<dt>JAVA</dt>
-<dd>Linguagem mais chata</dd>
-</dl>
-
-
+    {% for item in post%}
+    <h1>{{item.titulo}}</h1>
+    <h1>{{item.texto}}</h1>
+    <h1>{{item.data_criacao}}</h1>
+    {%endfor%}
 
 </body>
 </html>
